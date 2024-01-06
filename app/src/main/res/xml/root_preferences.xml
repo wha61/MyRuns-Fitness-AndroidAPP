@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    about elements of PreferenceScreen reference: https://blog.csdn.net/qq36246172/article/details/126137742?ops_request_misc=&request_id=&biz_id=102&utm_term=android%20studio%20preferencescree&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-126137742.142^v51^pc_rank_34_2,201^v3^control_1&spm=1018.2226.3001.4187-->
+    <PreferenceCategory android:title="@string/messages_header">
+<!--        to use intent in Preference-->
+<!--        reference: https://blog.csdn.net/pashanhu6402/article/details/79892548?ops_request_misc=&request_id=&biz_id=102&utm_term=PreferenceScreen%20%E4%B8%8B%E7%9A%84%20preference&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-79892548.142^v51^pc_rank_34_2,201^v3^control_1&spm=1018.2226.3001.4187-->
+        <Preference
+            android:layout_width="match_parent"
+            android:key="UP"
+            android:summary="User Profile"
+            android:title="Name, Email, Class, etc" />
+
+        <CheckBoxPreference
+            android:key="CheckBoxPreference"
+            android:title="Privacy Setting"
+            android:summary="Posting your records anonymously" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/add_header">
+        <ListPreference
+            android:entries="@array/unit_preference"
+            android:entryValues="@array/unit_preference"
+            android:key="UnitPreference"
+            android:summary="Select the units"
+            android:title="Unit Preference" />
+
+        <EditTextPreference
+            android:key="edit"
+            android:summary="Please enter your comments"
+            android:title="Comments" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Misc.">
+
+        <Preference
+            android:key="web"
+            android:summary="https://www.sfu.ca/computing.html"
+            android:title="Webpage">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.sfu.ca/computing.html"/>
+        </Preference>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

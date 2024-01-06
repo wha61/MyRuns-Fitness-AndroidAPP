@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapButtons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+<!--    <TextView-->
+<!--        android:id="@+id/myLocationLoading"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/map_loading"-->
+<!--        android:textSize="40sp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/white"/>-->
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <TextView
+        android:id="@+id/myLocationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/mapSaveButtons"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/mapCancelButtons"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>
