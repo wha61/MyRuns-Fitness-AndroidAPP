@@ -7,8 +7,11 @@ This app utilizes the GoogleMaps API to display the user's location and track th
 
 A standout feature of MyRuns is its integrated activity recognition technology, which employs a sophisticated classification model developed in Weka. This model accurately identifies the user's current activity state, distinguishing between states such as sitting, walking, and running, thereby enhancing the app's capability to provide activity-specific tracking and insights.
 
-<img src="/Screenshot_20240106_125430_com.example.googleMap.jpg" alt="ttd" style="width: 50%;">
-<img src="/Screenshot_20240106_125436_com.example.googleMap.jpg" alt="ttd" style="width: 50%;">
-<img src="/Screenshot_20240106_125442_com.example.googleMap.jpg" alt="ttd" style="width: 50%;">
-<img src="/Screenshot_20240106_125456_com.example.googleMap.jpg" alt="ttd" style="width: 50%;">
+<img src="/Screenshot_20240106_125456_com.example.googleMap.jpg" alt="ttd" style="width: 30%;">
+<img src="/Screenshot_20240106_125442_com.example.googleMap.jpg" alt="ttd" style="width: 30%;">
+<img src="/Screenshot_20240106_125436_com.example.googleMap.jpg" alt="ttd" style="width: 30%;">
+<img src="/Screenshot_20240106_125430_com.example.googleMap.jpg" alt="ttd" style="width: 30%;">
+
+
+
 
